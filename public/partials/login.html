@@ -1,0 +1,35 @@
+<div class="container">
+  <h1>Login</h1>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div ng-if="isMessage()">
+        <div class="alert alert-danger">
+          <p>{{message}}</p>
+        </div>
+      </div>
+      <form name="localLoginForm" ng-submit="submit(localLoginForm.$valid)">
+        <div class="form-group" ng-class="{ 'has-error' : localLoginForm.email.$invalid && !localLoginForm.email.$pristine }">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+            <input type="email" name="email" class="form-control input-lg" placeholder="Email" ng-model="formData.email" required>
+          </div>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : localLoginForm.password.$invalid && !localLoginForm.password.$pristine }">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+            <input type="password" name="password" class="form-control input-lg" placeholder="Password" ng-model="formData.password" ng-minlength="6" ng-maxlength="20" required>
+          </div>
+          <p ng-show="localLoginForm.password.$error.minlength" class="help-block">Username is too short.</p>
+          <p ng-show="localLoginForm.password.$error.maxlength" class="help-block">Username is too long.</p>
+        </div>
+        <div class="form-group">
+          <a ng-click="resetForm(formData,localLoginForm)" class="btn btn-circle btn-cancel"><i class="fa fa-close fa-2x"></i></a>
+          <button type="submit" class="btn btn-circle btn-check">
+            <i class="fa fa-check fa-2x"></i>
+          </button>
+        </div>
+      </form>
+      <p> You don't have an account yet !!! <a href="#/signup">Signup Now</a></p>
+    </div>
+  </div>
+</div>

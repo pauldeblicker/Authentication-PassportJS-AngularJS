@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>User Profile</h1>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div>
+        <p><strong>Email: </strong>{{user.local.email}}</p>
+        <p><strong>ID: </strong>{{user._id}}</p>
+        <p><strong>School/College/University: </strong>{{user.local.school}}</p>
+      </div>
+      <button class="btn btn btn-circle btn-logout" ng-click="logout()">
+        <i class="fa fa-sign-out fa-2x"></i>
+      </button>
+    </div>
+  </div>
+</div>

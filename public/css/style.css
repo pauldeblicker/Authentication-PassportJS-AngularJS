@@ -1,0 +1,75 @@
+html, body {
+  background-color: #2C3E50;
+  color: #ECECEC;
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 60px;
+}
+p{
+  font-size: 20px;
+}
+.btn:focus, .btn:active, .btn:hover{
+    color: #ECECEC;
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+.container {
+  text-align: center;
+}
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  padding-top: 10px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+  margin: 15px;
+  color: #ECECEC;
+
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+.btn-check {
+  background-color: #00B16A;
+  padding-right: 18px;
+}
+.btn-check:hover {
+  color: #ECECEC;
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+}
+.btn-cancel {
+  background-color: #F64747;
+  padding-right: 13px;
+}
+.btn-cancel:hover {
+  color: #ECECEC;
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+}
+.btn-logout {
+  background-color: #F9BF3B;
+  padding-right: 8px;
+}
+.btn-logout:hover {
+  color: #ECECEC;
+  -webkit-transform:rotate(360deg);
+  -moz-transform:rotate(360deg);
+  -o-transform:rotate(360deg);
+}
